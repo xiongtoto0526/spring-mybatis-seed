@@ -10,7 +10,7 @@ cd ./
 3.检查脏目录
 ### 特别提示：
 如果重复生成table， 需先删除 resource/mapper下的xml，否则会导致xml被重写两次，运行时则会报错如下：
- ---- Result Maps collection already contains value for com.seasun.management.mapper ---
+ ---- Result Maps collection already contains value for com.module.seed.mapper ---
  （mybatis-generator自身的bug）
 
 4.执行
@@ -18,8 +18,8 @@ cd ./
 java -jar mybatis-generator-core-1.3.5.jar -configfile ./generatorConfig.xml -overwrite
 
 4.检查
-分别会在com.seasun.management.mapper
-       com.seasun.management.model
+分别会在com.module.seed.mapper
+       com.module.seed.model
        resource/mapper
 下生成对应的类 或 xml 。
 
